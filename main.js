@@ -1,6 +1,7 @@
 'use strict'
 /*property of restaurent*/
-const openingHours = {
+
+/*const openingHours = {
   sunday: {
     open: 10,
     close: 22
@@ -44,7 +45,7 @@ const restaurant = {
 
 /*----------Map-----------*/
 ////////////////////////////////
-const rest = new Map();
+/*const rest = new Map();
 rest.set('name', 'Laptop Bazar');
 rest.set(1, 'Dhaka');
 rest.set(2, 'Bogura');
@@ -77,10 +78,10 @@ console.log(lang);
 for (const [langInd, value] of lang) {
   console.log(`${langInd}: ${value}`);
 }
-
+*/
 /*--------Object to Map---------*/
 ////////////////////////////////////
-
+/*
 const hours = new Map(Object.entries(openingHours));
 
 for (const [index, value] of hours) {
@@ -90,11 +91,11 @@ for (const [index, value] of hours) {
 for (const [index, value] of hours) {
   console.log(`On ${index}: Close at ${value.close}`);
 }
-console.log(hours);
+console.log(hours);*/
 
 /*------------Map to Array----------*/
 //////////////////////////////////////
-console.log(...lang)
+/*console.log(...lang)
 console.log([...lang.keys()]);
 console.log([...lang.values()]);
 
@@ -102,4 +103,79 @@ const myArr = [...lang];
 
 for (const [index, values] of myArr) {
   console.log(values)
+} */
+
+/*----------Strins----------*/
+//////////////////////////////////
+//let station = 'Santahar Rail Way Station';
+//let train = "Rupsha Express";
+
+// console.log(station[0]);//S
+// console.log(station[3]);//t
+// console.log('Momin'.includes('m'));//true
+// console.log(station.charAt(5));//h
+// console.log(station.charCodeAt(5));//104
+// console.log(station.indexOf('S'));//0
+// console.log(station.lastIndexOf('Rail'));//9
+// console.log(station.length);//25
+// console.log(station.endsWith('ion'));//true
+// console.log(station.startsWith('san'));//false
+// console.log(station.toUpperCase());
+
+/*slice(starting ind, ending endex(not included))*/
+// console.log(station.slice(0, 8));//(0-7)
+// console.log(station.slice(0, station.indexOf(' ')));
+//console.log(train.slice(train.indexOf(' ') + 1))
+
+/* To Get Last Element*/
+// console.log(station.slice(-1));
+// console.log(station[station.length - 1]);
+// console.log(station.at(-1))
+
+// function chekSeatNumber(seatNumber) {
+// W for Window
+//M for middle
+//C for cabin
+//   let slicedSeatNumber = seatNumber.slice(2, 3);
+//   if (slicedSeatNumber === 'W') {
+//     console.log(`Your seat is placed beside window`);
+//   }
+//   else {
+//     console.log(`Your seat is not placed beside window`);
+//   }
+// }
+// chekSeatNumber('22W20');
+// chekSeatNumber('20M22')
+
+/*-----String Part-2*/
+//////////////////////////
+
+function capitalization(name) {
+  let smallName = name.toLowerCase();
+  let capitalText = smallName.at(0).toUpperCase() + smallName.slice(1);
+  return capitalText;
 }
+
+// console.log(capitalization('sUraiYa'));
+// console.log(capitalization('shoHan'));
+// console.log(capitalization('yOuSuf'));
+// console.log(capitalization('moMIN'));
+// console.log(capitalization('SHM'));
+
+/*Replace & ReplaceAll*/
+let country = 'Bangladesh is my birthland';
+let changeCountry = country.replace('Bangladesh', 'India');
+console.log(changeCountry);
+let warningMsg = 'Beware of Trojan.86! Trojan.86! Trojan.86!';
+let correct1 = warningMsg.replaceAll('Trojan', ' tomato');
+console.log(correct1);
+
+/* Split & Join */
+let str1 = 'Hello,+I+am+a+student+of+Islamic+university';
+let str2 = str1.split('+');
+let correct = str2.join(' ')
+console.log(correct);
+
+let loremText = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident a, architecto modi optio nisi eligendi debitis velit nostrum vel expedita, dicta deserunt earum. Dicta nemo recusandae, illum pariatur id libero';
+
+console.log(loremText.split(' ').join().toUpperCase());
