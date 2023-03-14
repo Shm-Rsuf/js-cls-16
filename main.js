@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 /*property of restaurent*/
 
 /*const openingHours = {
@@ -150,32 +150,39 @@ for (const [index, values] of myArr) {
 /*-----String Part-2*/
 //////////////////////////
 
-function capitalization(name) {
-  let smallName = name.toLowerCase();
-  let capitalText = smallName.at(0).toUpperCase() + smallName.slice(1);
-  return capitalText;
+// function capitalization(name) {
+//   let lowerName = name.toLowerCase();
+//   let capitalization = lowerName.at(0).toUpperCase() + lowerName.slice(1);
+
+//   return capitalization;
+// }
+
+// console.log(capitalization("yuHanA"));
+// console.log(capitalization("shoHan"));
+// console.log(capitalization("yOuSuf"));
+// console.log(capitalization("moMIN"));
+// console.log(capitalization("SHM"));
+
+function normalizeEmail(email) {
+  let normalEmail = email.toLowerCase().trim();
+
+  return normalEmail;
 }
 
-// console.log(capitalization('sUraiYa'));
-// console.log(capitalization('shoHan'));
-// console.log(capitalization('yOuSuf'));
-// console.log(capitalization('moMIN'));
-// console.log(capitalization('SHM'));
+console.log(normalizeEmail("          UsUF@Gmail.cOm      \n      "));
+console.log(normalizeEmail("          AyeShA@Gmail.cOM      \n      "));
+console.log(normalizeEmail("          HImeLKHan@Gmail.cOM      \n      "));
 
 /*Replace & ReplaceAll*/
-let country = 'Bangladesh is my birthland';
-let changeCountry = country.replace('Bangladesh', 'India');
+let country = "India is my birthland";
+let changeCountry = country.replace("India", "Bangladesh");
 console.log(changeCountry);
-let warningMsg = 'Beware of Trojan.86! Trojan.86! Trojan.86!';
-let correct1 = warningMsg.replaceAll('Trojan', ' tomato');
+let warningMsg = "Beware of Trojan.86! Trojan.86! Trojan.86!";
+let correct1 = warningMsg.replaceAll("Trojan", " tomato");
 console.log(correct1);
 
 /* Split & Join */
-let str1 = 'Hello,+I+am+a+student+of+Islamic+university';
-let str2 = str1.split('+');
-let correct = str2.join(' ')
+let str1 = "Hello,+I+am+a+student+of+Islamic+university";
+let str2 = str1.split("+");
+let correct = str2.join(" ");
 console.log(correct);
-
-let loremText = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident a, architecto modi optio nisi eligendi debitis velit nostrum vel expedita, dicta deserunt earum. Dicta nemo recusandae, illum pariatur id libero';
-
-console.log(loremText.split(' ').join().toUpperCase());
