@@ -163,26 +163,26 @@ for (const [index, values] of myArr) {
 // console.log(capitalization("moMIN"));
 // console.log(capitalization("SHM"));
 
-function normalizeEmail(email) {
-  let normalEmail = email.toLowerCase().trim();
+// function normalizeEmail(email) {
+//   let normalEmail = email.toLowerCase().trim();
 
-  return normalEmail;
-}
+//   return normalEmail;
+// }
 
-console.log(normalizeEmail("          UsUF@Gmail.cOm      \n      "));
-console.log(normalizeEmail("          AyeShA@Gmail.cOM      \n      "));
-console.log(normalizeEmail("          HImeLKHan@Gmail.cOM      \n      "));
+// console.log(normalizeEmail("          UsUF@Gmail.cOm      \n      "));
+// console.log(normalizeEmail("          AyeShA@Gmail.cOM      \n      "));
+// console.log(normalizeEmail("          HImeLKHan@Gmail.cOM      \n      "));
 
 /*Replace & ReplaceAll*/
-let country = "India is my birthland";
-let changeCountry = country.replace("India", "Bangladesh");
-console.log(changeCountry);
-let warningMsg = "Beware of Trojan.86! Trojan.86! Trojan.86!";
-let correct1 = warningMsg.replaceAll("Trojan", " tomato");
-console.log(correct1);
+// let country = "India is my birthland";
+// let changeCountry = country.replace("India", "Bangladesh");
+// console.log(changeCountry);
+// let warningMsg = "Beware of Trojan.86! Trojan.86! Trojan.86!";
+// let correct1 = warningMsg.replaceAll("Trojan", " tomato");
+// console.log(correct1);
 
 /* Split & Join */
-let str1 = "Hello,+I+am+a+student+of+Islamic+university";
-let str2 = str1.split("+");
-let correct = str2.join(" ");
-console.log(correct);
+// let str1 = "Hello,+I+am+a+student+of+Islamic+university";
+// let str2 = str1.split("+");
+// let correct = str2.join(" ");
+// console.log(correct);
