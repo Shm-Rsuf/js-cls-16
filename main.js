@@ -186,3 +186,58 @@ for (const [index, values] of myArr) {
 // let str2 = str1.split("+");
 // let correct = str2.join(" ");
 // console.log(correct);
+
+//default parameter
+// const bookings = [];
+
+// const creatingBooking = function (
+//   roomNum,
+//   numGuest = 1,
+//   price = 500 * numGuest
+// ) {
+//   const booking = {
+//     roomNum,
+//     numGuest,
+//     price,
+//   };
+//   bookings.push(booking);
+// };
+// creatingBooking("A-202", 5, 2500);
+// creatingBooking("B-101", 3, 1500);
+// creatingBooking("B-101", undefined, 1000);
+// console.log(bookings);
+
+/////////////////////////////
+
+//Higher Order Function
+//First Class Function
+//Call Back Function
+
+// function logCutter(logs) {
+//   let logPieces = 0;
+//   for (const log of logs) {
+//     logPieces += log;
+//   }
+//   return logPieces;
+// }
+
+// function logCounter(logs) {
+//   return logs.length;
+// }
+
+// function sawmill(logs, fn) {
+//   console.log(`Operated by: ${fn.name}`);
+//   return fn(logs);
+// }
+
+// console.log(sawmill([1, 4, 5, 6, 7, 10], logCounter));
+// console.log(sawmill([1, 4, 5, 6, 7, 10], logCutter));
+
+//curring function
+function greet(mes) {
+  return function (name) {
+    console.log(`${mes}, ${name}`);
+  };
+}
+
+greet("Good evening")("Nishat!");
